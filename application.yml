@@ -1,0 +1,14 @@
+global:
+      message:Welcome to global microservices environment
+logging:
+  level:
+    root: INFO
+    com.policycraft: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        inlude:health,info,refresh
+endpoint:
+  health:
+    show-details:always
